@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Outfit:wght@300;400;600&display=swap');
+html,
+body {
+    background: linear-gradient(178deg, hsl(273, 75%, 66%) 10%, hsl(240, 73%, 65%) 100%);
+    font-family: 'Kumbh Sans';
+    font-size: 12px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.box {
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    height: 525px;
+    margin: auto;
+    margin-top: 195px;
+    max-width: 100%;
+    overflow: hidden;
+    width: 1100px;
+}
+
+.box .image_left {
+    background: url(./images/illustration-woman-online-desktop.svg);
+    background-repeat: no-repeat;
+    left: -77px;
+    position: relative;
+    top: 77px;
+    width: 50%;
+}
+
+.main_img_left {
+    left: 317px;
+    position: fixed;
+    top: 418px;
+}
+
+.shadow_img_left {
+    left: -494px;
+    overflow: hidden;
+    position: absolute;
+    top: -366px;
+}
+
+.text_right {
+    color: hsl(238, 29%, 16%);
+    margin-top: 49px;
+    width: 45%;
+}
+
+.text_right_title h1 {
+    font-size: xx-large;
+}
+
+hr {
+    background: hsl(240, 5%, 91%);
+    border: none;
+    display: flex;
+    height: 1px;
+    margin-top: auto;
+}
+
+.fa-angle-down,
+.fa-angle-up {
+    color: hsl(14, 88%, 65%);
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.fa-angle-up {
+    display: none !important;
+}
+
+.questions_right {
+    font-size: 16px;
+    margin-top: 24px;
+    padding-right: 16px;
+}
+
+.questions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.questions_p {
+    color: hsl(237, 12%, 33%);
+    display: inline-block;
+    margin-right: 143px;
+}
+
+.questions_p,
+.questions i {
+    cursor: pointer;
+}
+
+.questions_p:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+.answer_p {
+    color: hsl(237, 12%, 33%);
+    display: none;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+.active .fa-angle-down {
+    display: none;
+}
+
+.active .fa-angle-up {
+    display: flex !important;
+}
+
+.active .questions_p {
+    color: hsl(238, 29%, 16%);
+    font-weight: 600;
+}
+
+.answer_p.show {
+    display: flex !important;
+}
